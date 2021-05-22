@@ -1,3 +1,8 @@
+-- yPokeStats 
+-- by YliNG
+-- v0.1
+-- https://github.com/yling
+
 dofile "data/tables.lua" -- Tables with games data, and various data - including names
 dofile "data/memory.lua" -- Functions and Pokemon table generation
 
