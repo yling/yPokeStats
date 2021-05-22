@@ -25,8 +25,15 @@ It natively supports all gen 3, 4 and 5 games:
 * Pokemon Black / White
 * Pokemon Black 2 / White 2
 
-![GitHub Logo](/screens/emerald_help.png)
-Format: ![Emerald Help Menu]
+![Emerald Help Menu](/screens/3_emerald_help.png)
+![Emerald Enemy](/screens/3_emerald_fight.png)
+![Emerald Enemy More](/screens/3_emerald_fight_more.png)
+![Fire Red Enemy More](/screens/3_firered_fight_more.png)
+![Platinum Enemy More](/screens/4_platinum_fight_more.png)
+![Black Help Menu](/screens/5_black_help.png)
+![Black More](/screens/5_black_more.png)
+
+
 
 ### How does it work ?
 It fetches the GAME TITLE from the rom header to identify the current game. Then it reads and decrypts the data to be displayed by the script.
