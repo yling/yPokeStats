@@ -125,7 +125,7 @@ if version ~= 0 and games[version][lan] ~= nil then
 			end
         end
         
-        frame = gen == 3 and "F. E/R: "..emu.framecount().."/"..memory.readdwordunsigned(0x020249C0) or "F. E: "..emu.framecount()
+        frame = version == "POKEMON EMER" and "F. E/R: "..emu.framecount().."/"..memory.readdwordunsigned(0x020249C0) or "F. E: "..emu.framecount()
         gui.text(settings["pos"][3][1],settings["pos"][3][2], frame) -- Emu frame counter
 		gui.text(settings["pos"][1][1]+sel[1]*4/10,settings["pos"][3][2], "PID: "..bit.tohex(lastpid)) -- Last PID
 		
