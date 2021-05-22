@@ -25,6 +25,9 @@ It natively supports all gen 3, 4 and 5 games:
 * Pokemon Black / White
 * Pokemon Black 2 / White 2
 
+![GitHub Logo](/screens/emerald_help.png)
+Format: ![Emerald Help Menu]
+
 ### How does it work ?
 It fetches the GAME TITLE from the rom header to identify the current game. Then it reads and decrypts the data to be displayed by the script.
 It uses several data tables to convert numeric IDs (for Pokemon, Items, Abilities) to their actual name.
