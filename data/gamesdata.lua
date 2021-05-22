@@ -31,7 +31,7 @@ games["POKEMON B"],games["POKEMON W"],games["POKEMON B2"],games["POKEMON W2"]={}
 -- Gen 3
 games["POKEMON RUBY"]["E"]={"Pokemon Ruby (US)",0x03004360,0x30045C0,100} -- RUBY US - OK
 games["POKEMON RUBY"]["F"]={"Pokemon Ruby (PAL)",0x03004370,0x30045D0,100} -- RUBY FR - OK
-games["POKEMON RUBY"]["J"]={"Pokemon Ruby (JAP)",0x3004290n,0x30044F0,100} -- RUBY J -- UNTESTED
+games["POKEMON RUBY"]["J"]={"Pokemon Ruby (JAP)",0x3004290,0x30044F0,100} -- RUBY J -- UNTESTED
 
 games["POKEMON SAPP"]["E"]={"Pokemon Sapphire (US)",0x03004360,0x30045C0,100} -- SAPPHIRE US - OK
 games["POKEMON SAPP"]["F"]={"Pokemon Sapphire (PAL)",0x03004370,0x30045D0,100} -- SAPPHIRE FR - OK
