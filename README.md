@@ -2,17 +2,17 @@
 ## Unified Pokemon Stats & RNG tool
 yPokeStats is a LUA script that can display a lot of information about Pokemon games.
 
-### What it can do
-* Display IVs, EVs, Stats and Contest Stats
-* Display Nature
-* Display Hidden Power
-* Display Held Item
-* Display Pokerus Status
-* Display Frames Count (Emerald even displays frame count as reported by the game)
-* Display Friendship 
-* Display Ability
-* Display TID / SID
-* Display moves and PP
+### What it can display
+* IVs, EVs, Stats and Contest Stats
+* Nature
+* Hidden Power
+* Held Item
+* Pokerus Status
+* Frames Count (Emerald even displays frame count as reported by the game)
+* Friendship 
+* Ability
+* TID / SID
+* Moves and PP
 
 ### Supported games
 It natively supports all gen 3, 4 and 5 games:
@@ -32,8 +32,6 @@ It natively supports all gen 3, 4 and 5 games:
 ![Platinum Enemy More](/screens/4_platinum_fight_more.png)
 ![Black Help Menu](/screens/5_black_help.png)
 ![Black More](/screens/5_black_more.png)
-
-
 
 ### How does it work ?
 It fetches the GAME TITLE from the rom header to identify the current game. Then it reads and decrypts the data to be displayed by the script.
