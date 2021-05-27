@@ -1,6 +1,14 @@
 -- Sources : 
+-- Gen 1 Data Structure : https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_data_structure_(Generation_I)
+-- Gen 1 RAM map : http://datacrystal.romhacking.net/wiki/Pok%C3%A9mon_Red/Blue:RAM_map
+-- Gen 2 Data Structure : https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_data_structure_(Generation_II)
+-- Gen 2 RAM map : http://datacrystal.romhacking.net/wiki/Pok%C3%A9mon_Red/Blue:RAM_map
+-- GBC cartridge header : https://gbdev.gg8.se/wiki/articles/The_Cartridge_Header
+-- Gen 2 Ram Stucture : http://datacrystal.romhacking.net/wiki/Pok%C3%A9mon_Crystal:RAM_map
 -- Gen 3 RNG & Data structure : https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_data_structure_(Generation_III)
 -- Gen 4 RNG & Data structure : https://projectpokemon.org/home/docs/gen-4/pkm-structure-r65/
+-- GBA format header : https://problemkaputt.de/gbatek.htm#gbacartridges
+-- Gen 5 RNG & Data structure : https://projectpokemon.org/home/docs/gen-5/bw-save-structure-r60/
 -- NDS format header : https://dsibrew.org/wiki/DSi_Cartridge_Header
 -- Types colors : http://www.pokemonaaah.net/artsyfartsy/colordex/
 -- Data for the data tables : https://bulbapedia.bulbagarden.net (various pages)
@@ -8,6 +16,8 @@
 table,games={},{}
 
 table["items"]={}
+dofile "data/gen1data.lua" -- Gen 1 Pokemon ID and items
+dofile "data/gen2data.lua" -- Gen 2 items
 dofile "data/gen3data.lua" -- Gen 3 Pokemon ID and abilities
 dofile "data/gen4data.lua" -- Gen 4 Items ID
 dofile "data/gen5data.lua" -- Gen 5 Items ID
@@ -15,7 +25,7 @@ dofile "data/gamesdata.lua" -- Games titles and memory adresses
 dofile "data/pokemondata.lua" -- Pokemon names, abilities, moves
 
 -- Consoles resolutions by gen (to display things right on every game)
-table["consoles"]={{240,160},{256,192}}
+table["consoles"]={{160,144},{240,160},{256,192}}
 
 -- Things to display (only has a cosmetic effect but might produce overlapping text if changed)
 table["labels"]={"HP","AT","DF","SA","SD","SP"} -- Stats labels (Keep in the same order)

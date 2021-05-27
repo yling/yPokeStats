@@ -24,31 +24,61 @@
 -- games["POKEMON RUBY"]["F"][1] = {"Pokemon Rubis (FR)", 0x03004360, 0x30045C0, 0x64}
 
 -- This creates the arrays to hold the game data, don't change it (excepted if I forgot a game)
+games["POKEMON RED"],games["POKEMON BLUE"],games["POKEMON YELL"],games["POKEMON GREE"]={},{},{},{}
+games["POKEMON_GLDA"],games["POKEMON_SLVA"],games["PM_CRYSTALB"]={},{},{}
 games["POKEMON RUBY"],games["POKEMON SAPP"],games["POKEMON EMER"],games["PKMN EMER P "],games["POKEMON FIRE"],games["POKEMON LEAF"]={},{},{},{},{},{} -- Gen 3
 games["POKEMON D"],games["POKEMON P"],games["POKEMON PL"],games["POKEMON HG"],games["POKEMON SS"]={},{},{},{},{} -- Gen 4
 games["POKEMON B"],games["POKEMON W"],games["POKEMON B2"],games["POKEMON W2"]={},{},{},{} -- Gen 5
 
+-- Gen 1
+games["POKEMON RED"]["F"]={"Pokemon Red (PAL)",0xD170,0xCFEA,44} -- OK
+games["POKEMON RED"]["E"]={"Pokemon Red (US)",0xD16B,0xCFE5,44} -- OK
+games["POKEMON RED"]["J"]={"Pokemon Red (JAP)",0xD12B,0xCFCC,44} -- OK
+
+games["POKEMON BLUE"]["F"]={"Pokemon Blue (PAL)",0xD170,0xCFEA,44} -- OK
+games["POKEMON BLUE"]["E"]={"Pokemon Blue (US)",0xD16B,0xCFE5,44} -- OK
+games["POKEMON BLUE"]["J"]={"Pokemon Blue (JAP)",0xD12B,0xCFCC,44} -- OK
+
+games["POKEMON YELL"]["F"]={"Pokemon Yellow (PAL)",0xD16F,0xCFE9,44} -- OK
+games["POKEMON YELL"]["E"]={"Pokemon Yellow (US)",0xD16A,0xCFE4,44} -- OK
+games["POKEMON YELL"]["J"]={"Pokemon Yellow (JAP)",0xD12B,0xCFCC,44} -- OK
+
+games["POKEMON GREE"]["J"]={"Pokemon Green (JAP)",0xD12B,0xCFCC,44} -- OK
+
+-- Gen 2
+games["POKEMON_GLDA"]["F"]={"Pokemon Gold (PAL)", 0xDA2A,0xD0EF,48} -- OK
+games["POKEMON_GLDA"]["E"]={"Pokemon Gold (US)", 0xDA2A,0xD0EF,48} -- OK
+games["POKEMON_GLDA"]["J"]={"Pokemon Gold (JAP)",0xD9F0,0xD0E1,48} -- OK
+
+games["POKEMON_SLVA"]["F"]={"Pokemon Silver (PAL)",0xDA2A,0xD0EF,48} -- OK
+games["POKEMON_SLVA"]["E"]={"Pokemon Silver (US)",0xDA2A,0xD0EF,48} -- OK
+games["POKEMON_SLVA"]["J"]={"Pokemon Silver (JAP)",0xD9F0,0xD0E1,48} -- OK
+
+games["PM_CRYSTALB"]["E"]={"Pokemon Crystal 1.1 (US)",0xDCDF,0xD206,48} -- OK
+games["PM_CRYSTALB"]["F"]={"Pokemon Crystal 1.1 (PAL)",0xDCDF,0xD206,48} -- OK
+games["PM_CRYSTALB"]["J"]={"Pokemon Crystal 1.1 (JAP)",0xDCA5,0xD237,48} -- OK
+
 -- Gen 3
 games["POKEMON RUBY"]["E"]={"Pokemon Ruby (US)",0x03004360,0x30045C0,100} -- RUBY US - OK
 games["POKEMON RUBY"]["F"]={"Pokemon Ruby (PAL)",0x03004370,0x30045D0,100} -- RUBY FR - OK
-games["POKEMON RUBY"]["J"]={"Pokemon Ruby (JAP)",0x3004290,0x30044F0,100} -- RUBY J -- UNTESTED
+games["POKEMON RUBY"]["J"]={"Pokemon Ruby (JAP)",0x3004290,0x30044F0,100} -- RUBY J -- OK
 
 games["POKEMON SAPP"]["E"]={"Pokemon Sapphire (US)",0x03004360,0x30045C0,100} -- SAPPHIRE US - OK
 games["POKEMON SAPP"]["F"]={"Pokemon Sapphire (PAL)",0x03004370,0x30045D0,100} -- SAPPHIRE FR - OK
-games["POKEMON SAPP"]["J"]={"Pokemon Sapphire (JAP)",0x3004290,0x30044F0,100} -- SAPPHIRE J -- UNTESTED
+games["POKEMON SAPP"]["J"]={"Pokemon Sapphire (JAP)",0x3004290,0x30044F0,100} -- SAPPHIRE J -- OK
 
 games["POKEMON EMER"]["E"]={"Pokemon Emerald (US)",0x20244EC,0x2024744,100} -- EMERALD US - OK
 games["POKEMON EMER"]["F"]={"Pokemon Emerald (PAL)",0x20244EC,0x2024744,100} -- EMERALD FR - OK
 games["PKMN EMER P "]["F"]={"Pokemon Emeraude+",0x20244EC,0x2024744,100} -- EMERAUDE PLUS - OK
-games["POKEMON EMER"]["J"]={"Pokemon Emerald (JAP)",0x2024190,0x20242E8,100} -- EMERALD -- UNTESTED
+games["POKEMON EMER"]["J"]={"Pokemon Emerald (JAP)",0x2024190,0x20242E8,100} -- EMERALD -- OK
 
 games["POKEMON FIRE"]["E"]={"Pokemon Fire Red (US)",0x02024284,0x0202402C,100} -- FIRE RED US - OK
 games["POKEMON FIRE"]["F"]={"Pokemon Fire Red (PAL)",0x02024284,0x0202402C,100} -- FIRE RED FR - OK
-games["POKEMON FIRE"]["J"]={"Pokemon Fire Red (JAP)",0x20241E4,0x2023F8C,100} -- FIRE RED JAP - UNTESTED
+games["POKEMON FIRE"]["J"]={"Pokemon Fire Red (JAP)",0x20241E4,0x2023F8C,100} -- FIRE RED JAP - OK
 
 games["POKEMON LEAF"]["E"]={"Pokemon Leaf Green (US)",0x02024284,0x0202402C,100} -- LEAF GREEN US - OK
 games["POKEMON LEAF"]["F"]={"Pokemon Leaf Green (PAL)",0x02024284,0x0202402C,100} -- LEAF GREEN US - OK
-games["POKEMON LEAF"]["J"]={"Pokemon Leaf Green (JAP)",0x20241E4,0x2023F8C,100} -- LEAF GREEN JAP - UNTESTED
+games["POKEMON LEAF"]["J"]={"Pokemon Leaf Green (JAP)",0x20241E4,0x2023F8C,100} -- LEAF GREEN JAP - OK
 
 -- Gen 4
 games["POKEMON D"]["F"]={"Pokemon Diamond (PAL)", memory.readdword(0x0210712C) + 0xD2AC, memory.readdword(memory.readdword(0x0210712C) + 0x364C8) + 0x774, 0xEC} -- OK
