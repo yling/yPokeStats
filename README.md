@@ -17,10 +17,10 @@ yPokeStats is a LUA script that can display a lot of information about Pokemon g
 
 ### Supported games
 It natively supports all gen 1, 2, 3, 4 and 5 games:
-* Pokemon Red/Blue/Green (still have to add all languages)
-* Pokemon Yellow (still have to add all languages)
-* Pokemon Silver/Gold (still have to add all languages)
-* Pokemon Crystal (still have to add all languages)
+* Pokemon Red/Blue/Green (US, JAP, ES, IT, DE, FR)
+* Pokemon Yellow (US, JAP, ES, IT, DE, FR)
+* Pokemon Silver/Gold (US, JAP, ES, IT, DE, FR)
+* Pokemon Crystal (US, JAP, ES, IT, DE, FR)
 * Pokemon Ruby / Sapphire
 * Pokemon Emerald (and french hackrom Emeraude Plus)
 * Pokemon Fire Red / Leaf Green
@@ -60,8 +60,11 @@ To make this script, I started by reading other people's code. Here are the scri
 * Gen 3 : https://github.com/red-the-dev/gen3-pokemonstatsdisplay
 * Gen 4,5 : https://github.com/dude22072/PokeStats/blob/master/LUA%20scripts/
 
+### It doesn't work !
+First, be sure to have all files (ylingstats.lua and the data folder).
+Then if you do, please tell me which game and region you are using so that I can check and add it.
+
 I hope you'll find my code cleaner, if not, please share your thoughts on how to improve.
 
 ## TODO
-* Add Gen 1 and 2
 * Make a Python interpreter for 6th and 7th gens
