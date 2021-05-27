@@ -30,6 +30,17 @@ games["POKEMON RUBY"],games["POKEMON SAPP"],games["POKEMON EMER"],games["PKMN EM
 games["POKEMON D"],games["POKEMON P"],games["POKEMON PL"],games["POKEMON HG"],games["POKEMON SS"]={},{},{},{},{} -- Gen 4
 games["POKEMON B"],games["POKEMON W"],games["POKEMON B2"],games["POKEMON W2"]={},{},{},{} -- Gen 5
 
+-- These are used to identify gen 1 & 2 games
+games["lan"]={}
+games["lan"][1]={}
+games["lan"][2]={}
+games["lan"][1]["J"]={0xc1a2,0x36dc,0xd5dd,0x299c,0x47F5} -- JAP gen 1
+games["lan"][1]["E"]={0xe691,0xa9d,0x7c04} -- US gen 1
+games["lan"][1]["F"]={0xd289,0x9c5e,0xdc5c,0xbc2e,0x4a38,0xd714,0xfc7a,0xa456,0x8f4e,0xfb66,0x3756,0xc1b7} -- PAL gen 1
+games["lan"][2]["J"]={0x409A,0x341D,0x708A} -- JAP gen 2
+games["lan"][2]["E"]={0xAE0D,0xD218,0x2D68} -- US gen 2
+games["lan"][2]["F"]={0xC66F,0xE2F2,0x5073,0x97DC,0x8249,0x6ECD,0xF442,0x5393,0x4B06,0x8CFB,0xBADB,0x0CCE} -- PAL gen 2
+
 -- Gen 1
 games["POKEMON RED"]["F"]={"Pokemon Red (PAL)",0xD170,0xCFEA,44} -- OK
 games["POKEMON RED"]["E"]={"Pokemon Red (US)",0xD16B,0xCFE5,44} -- OK

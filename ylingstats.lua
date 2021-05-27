@@ -183,7 +183,7 @@ else -- Game not in the data table
         print("This game isn't supported. Is it a hackrom ? It might work but you'll have to add it yourself. Check gamesdata.lua")
     end
     print("Version: "..version)
-    print("Language: "..lan)
+    print("Language: "..bit.tohex(lan))
 end
 
 gui.register(main)

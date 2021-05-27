@@ -14,32 +14,32 @@ function numTruncate(x,n) -- Truncate to n decimals
 	return y/o
 end
 
+function hasValue (tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return true
+        end
+    end
+
+    return false
+end
+
 function getGameInfo() -- Reads game memory to determine which game is running
     local version, lan, gen, sel
 	if string.find(bts(memory.readbyterange(0x0134, 12),12), "POKEMON") or string.find(bts(memory.readbyterange(0x0134, 12),12), "PM") then
 		version = bts(memory.readbyterange(0x0134, 12),12)
         lan = memory.readword(0x014E)
-        if lan == 0xc1a2 or lan == 0x36dc or lan == 0xd5dd or lan == 0x299c or lan == 0x47F5 then
-            lan = "J"
-			gen = 1
-        elseif lan == 0xe691  or lan == 0xa9d or lan == 0x7c04 then
-            lan = "E"
-			gen = 1
-        elseif lan == 0xd289 or lan == 0x9c5e or lan == 0xdc5c or lan == 0xbc2e or lan == 0x4a38 or lan == 0xd714 or lan == 0xfc7a or lan == 0xa456 or lan == 0x8f4e or lan == 0xfb66 or lan == 0x3756 or lan == 0xc1b7 then
-            lan = "F"
-			gen = 1
-		elseif lan == 0xC66F or lan == 0xE2F2 then
-			lan = "F"
-			gen = 2
-		elseif lan == 0xAE0D or lan == 0xD218 or lan == 0x2D68 then
-			lan = "E"
-			gen = 2
-		elseif lan == 0x409A or lan == 0x341D or lan == 0x708A then
-			lan = "J"
-			gen = 2
-        else 
-            lan = 0
-        end  
+        regions = {"J","E","F"}
+		
+		for i=1,2 do -- Finds the proper region and gen
+			for j=1,3 do
+				if hasValue(games["lan"][i][regions[j]], lan) then
+					gen = i
+					lan = regions[j]
+				end
+			end
+		end
+        
         sel = table["consoles"][1]
     elseif string.find(bts(memory.readbyterange(0x080000A0, 12),12), "POKEMON") or string.find(bts(memory.readbyterange(0x080000A0, 12),12), "PKMN") then
         version = bts(memory.readbyterange(0x080000A0, 12),12)
