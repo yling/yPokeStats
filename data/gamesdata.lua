@@ -105,13 +105,13 @@ games["POKEMON PL"]["E"]={"Pokemon Platinum (US)", memory.readdword(0x02101D2C) 
 games["POKEMON PL"]["J"]={"Pokemon Platinum (JAP)", memory.readdword(0x02101D2C) + 0xD094, memory.readdword(memory.readdword(0x02101D2C) + 0x352F4) + 0x7A0, 0xEC} -- UNTESTED
 
 -- Gen 5
-games["POKEMON B"]["E"]={"Pokemon Black (US)", 0x02234934, 0x0226ACF4, 0xDC} -- UNTESTED
-games["POKEMON B"]["J"]={"Pokemon Black (JAP)", 0x02234934, 0x0226ACF4, 0xDC} -- UNTESTED
-games["POKEMON B"]["F"]={"Pokemon Black (PAL)", 0x02234934, 0x0226ACF4, 0xDC} -- OK
+games["POKEMON B"]["E"]={"Pokemon Black (US)", 0x02234934, 0x0226AC74, 0xDC} -- UNTESTED
+games["POKEMON B"]["J"]={"Pokemon Black (JAP)", 0x02234934, 0x0226AC74, 0xDC} -- UNTESTED
+games["POKEMON B"]["F"]={"Pokemon Black (PAL)", 0x02234934, 0x0226AC74, 0xDC} -- OK
 
-games["POKEMON W"]["E"]={"Pokemon White (US)", 0x02234954, 0x0226AD14, 0xDC} -- UNTESTED
-games["POKEMON W"]["J"]={"Pokemon White (JAP)", 0x02234954, 0x0226AD14, 0xDC} -- UNTESTED
-games["POKEMON W"]["F"]={"Pokemon White (PAL)", 0x02234954, 0x0226AD14, 0xDC} -- OK
+games["POKEMON W"]["E"]={"Pokemon White (US)", 0x02234954, 0x0226AC94, 0xDC} -- UNTESTED
+games["POKEMON W"]["J"]={"Pokemon White (JAP)", 0x02234954, 0x0226AC94, 0xDC} -- UNTESTED
+games["POKEMON W"]["F"]={"Pokemon White (PAL)", 0x02234954, 0x0226AC94, 0xDC} -- OK
 
 games["POKEMON B2"]["E"]={"Pokemon Black 2 (US)", 0x0221E3EC, 0x02258834, 0xDC} -- UNTESTED
 games["POKEMON B2"]["J"]={"Pokemon Black 2 (JAP)", 0x0221E3EC, 0x02258834, 0xDC} -- UNTESTED
