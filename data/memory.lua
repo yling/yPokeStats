@@ -340,8 +340,8 @@ function fetchPokemon(start) -- Fetches Pokemon info from memory and returns a t
 			pokemon["pp"] = {getbits(pokemon["attack"][3],0,8),getbits(pokemon["attack"][3],8,8),getbits(pokemon["attack"][3],16,8),getbits(pokemon["attack"][3],24,8)}
 			pokemon["iv"]={getbits(pokemon["misc"][2],0,5),getbits(pokemon["misc"][2],5,5),getbits(pokemon["misc"][2],10,5),getbits(pokemon["misc"][2],20,5),getbits(pokemon["misc"][2],25,5),getbits(pokemon["misc"][2],15,5)}
 			pokemon["hiddenpower"]={}
-			pokemon["hiddenpower"]["type"]=math.floor(((pokemon["iv"][1]%2 + 2*(pokemon["iv"][2]%2) + 4*(pokemon["iv"][3]%2) + 8*(pokemon["iv"][4]%2) + 16*(pokemon["iv"][5]%2) + 32*(pokemon["iv"][6]%2))*15)/63)
-			pokemon["hiddenpower"]["base"]=math.floor((( getbits(pokemon["iv"][1],1,1) + 2*getbits(pokemon["iv"][2],1,1) + 4*getbits(pokemon["iv"][3],1,1) + 8*getbits(pokemon["iv"][4],1,1) + 16*getbits(pokemon["iv"][5],1,1) + 32*getbits(pokemon["iv"][6],1,1))*40)/63 + 30)
+			pokemon["hiddenpower"]["type"]=math.floor(((pokemon["iv"][1]%2 + 2*(pokemon["iv"][2]%2) + 4*(pokemon["iv"][3]%2) + 8*(pokemon["iv"][6]%2) + 16*(pokemon["iv"][4]%2) + 32*(pokemon["iv"][5]%2))*15)/63)
+			pokemon["hiddenpower"]["base"]=math.floor((( getbits(pokemon["iv"][1],1,1) + 2*getbits(pokemon["iv"][2],1,1) + 4*getbits(pokemon["iv"][3],1,1) + 8*getbits(pokemon["iv"][6],1,1) + 16*getbits(pokemon["iv"][4],1,1) + 32*getbits(pokemon["iv"][5],1,1))*40)/63 + 30)
 			pokemon["pokerus"]=getbits(pokemon["misc"][1],0,8)
 			pokemon["hp"]={}
 			pokemon["hp"]["current"] = mword(start+86)
@@ -413,8 +413,8 @@ function fetchPokemon(start) -- Fetches Pokemon info from memory and returns a t
 		pokemon["hp"]["current"]=decrypted[0x8E]
 		pokemon["hp"]["max"]=decrypted[0x90]
 		pokemon["hiddenpower"]={}
-		pokemon["hiddenpower"]["type"]=math.floor(((pokemon["iv"][1]%2 + 2*(pokemon["iv"][2]%2) + 4*(pokemon["iv"][3]%2) + 8*(pokemon["iv"][4]%2) + 16*(pokemon["iv"][5]%2) + 32*(pokemon["iv"][6]%2))*15)/63)
-		pokemon["hiddenpower"]["base"]=math.floor((( getbits(pokemon["iv"][1],1,1) + 2*getbits(pokemon["iv"][2],1,1) + 4*getbits(pokemon["iv"][3],1,1) + 8*getbits(pokemon["iv"][4],1,1) + 16*getbits(pokemon["iv"][5],1,1) + 32*getbits(pokemon["iv"][6],1,1))*40)/63 + 30)
+		pokemon["hiddenpower"]["type"]=math.floor(((pokemon["iv"][1]%2 + 2*(pokemon["iv"][2]%2) + 4*(pokemon["iv"][3]%2) + 8*(pokemon["iv"][6]%2) + 16*(pokemon["iv"][4]%2) + 32*(pokemon["iv"][5]%2))*15)/63)
+		pokemon["hiddenpower"]["base"]=math.floor((( getbits(pokemon["iv"][1],1,1) + 2*getbits(pokemon["iv"][2],1,1) + 4*getbits(pokemon["iv"][3],1,1) + 8*getbits(pokemon["iv"][6],1,1) + 16*getbits(pokemon["iv"][4],1,1) + 32*getbits(pokemon["iv"][5],1,1))*40)/63 + 30)
 		lastpid = pokemon["pid"]
 		return pokemon
     end
