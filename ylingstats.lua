@@ -1,7 +1,12 @@
 -- yPokeStats 
 -- by YliNG
--- v0.1
+-- v2.2
 -- https://github.com/yling
+
+if emu and not memory then
+  console:log("This script is made to work with VBA-rr. It will not work with mGBA.")
+  return false
+end
 
 dofile "data/tables.lua" -- Tables with games data, and various data - including names
 dofile "data/memory.lua" -- Functions and Pokemon table generation

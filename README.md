@@ -2,6 +2,10 @@
 ## Unified Pokemon Stats & RNG tool
 yPokeStats is a LUA script that can display a lot of information about Pokemon games.
 
+### Requirements
+The script is made to work with VBA-rr and DeSmuME. While it's possible other emulators can run it, I know for sure it's not compatible with mGBA, because of differences in the LUA functions. 
+I tried making it compatible but the GUI functions of mGBA didn't allow me to display the information on screen. I'll have to make another version for mGBA with a new GUI that displays next to the game. All memory-related functions also have to be modified (which is trivial).
+
 ### What it can display
 * IVs, EVs, Stats and Contest Stats
 * Nature
@@ -67,4 +71,5 @@ Then if you do, please tell me which game and region you are using so that I can
 I hope you'll find my code cleaner, if not, please share your thoughts on how to improve.
 
 ## TODO
+* Make an mGBA version
 * Make a Python interpreter for 6th and 7th gens
