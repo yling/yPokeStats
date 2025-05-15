@@ -64,8 +64,9 @@ function getGameInfo() -- Reads game memory to determine which game is running
         gen = 0
         sel = table["consoles"][1]
     end
-	-- I think all PAL regions use the same adresses. Here's the dirt hack to make them all work
-	if lan == "D" or lan == "H" or lan == "I" or lan =="S" or lan == "X" or lan == "Y" or lan == "Z" then
+	-- I think all PAL regions use the same adresses. Here's the dirty hack to make them all work
+	-- Note : "O" seems to be the letter used in DSi enhanced games
+	if lan == "D" or lan == "H" or lan == "I" or lan == "O" or lan =="S" or lan == "X" or lan == "Y" or lan == "Z" then
 		lan = "F"
 	end
 	local gamedata = {version, lan, gen, sel}
