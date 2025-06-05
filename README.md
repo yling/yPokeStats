@@ -68,8 +68,8 @@ To make this script, I started by reading other people's code. Here are the scri
 First, be sure to have all files (ylingstats.lua and the data folder).
 Then if you do, please tell me which game and region you are using so that I can check and add it.
 
-I hope you'll find my code cleaner, if not, please share your thoughts on how to improve.
+I hope you'll find my code clean, if not, please share your thoughts on how to improve.
 
 ## TODO
-* Make an mGBA version
-* Make a Python interpreter for 6th and 7th gens
+* Write an injectable version in C that would work with various emulators
+* Test and add all existing versions for gens 1-5
