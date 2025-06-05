@@ -104,6 +104,14 @@ games["POKEMON PL"]["F"]={"Pokemon Platinum (PAL)", memory.readdword(0x02101D2C)
 games["POKEMON PL"]["E"]={"Pokemon Platinum (US)", memory.readdword(0x02101D2C) + 0xD094, memory.readdword(memory.readdword(0x02101D2C) + 0x352F4) + 0x7A0, 0xEC} -- OK
 games["POKEMON PL"]["J"]={"Pokemon Platinum (JAP)", memory.readdword(0x02101D2C) + 0xD094, memory.readdword(memory.readdword(0x02101D2C) + 0x352F4) + 0x7A0, 0xEC} -- UNTESTED
 
+games["POKEMON SS"]["F"]={"Pokemon SoulSilver (PAL)", memory.readdword(0x021D110C) + 0x12, memory.readdword(0x021D110C) + 0x4EFD2, 0xEC} -- OK
+games["POKEMON SS"]["E"]={"Pokemon SoulSilver (US)", memory.readdword(0x021D10EC) + 0x12, memory.readdword(0x021D10EC) + 0x4EFD2, 0xEC} -- OK
+games["POKEMON SS"]["J"]={"Pokemon SoulSilver (JAP)", memory.readdword(0x021D10EC) + 0x12, memory.readdword(0x021D10EC) + 0x4EFD2, 0xEC} -- UNTESTED
+
+games["POKEMON HG"]["F"]={"Pokemon HeartGold (PAL)", memory.readdword(0x021D110C) + 0x12, memory.readdword(0x021D110C) + 0x4EFD2, 0xEC} -- OK
+games["POKEMON HG"]["E"]={"Pokemon HeartGold (US)", memory.readdword(0x021D10EC) + 0x12, memory.readdword(0x021D10EC) + 0x4EFD2, 0xEC} -- OK
+games["POKEMON HG"]["J"]={"Pokemon HeartGold (JAP)", memory.readdword(0x021D10EC) + 0x12, memory.readdword(0x021D10EC) + 0x4EFD2, 0xEC} -- UNTESTED
+
 -- Gen 5
 games["POKEMON B"]["E"]={"Pokemon Black (US)", 0x02234934, 0x0226AC74, 0xDC} -- UNTESTED
 games["POKEMON B"]["J"]={"Pokemon Black (JAP)", 0x02234934, 0x0226AC74, 0xDC} -- UNTESTED
